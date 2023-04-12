@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script> -->
+
+
+    <title>BUGNI</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="style1.css">
+
+    <!-- <script src="app.js"></script> -->
+
+</head>
+
+<body>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyDqmYRyBVina6ymh5hw-eAUueO6N6Hd3DQ",
+            authDomain: "bugni-database.firebaseapp.com",
+            projectId: "bugni-database",
+            storageBucket: "bugni-database.appspot.com",
+            messagingSenderId: "313434314632",
+            appId: "1:313434314632:web:787dd37ccd6968f2ab8c3d"
+        };
+
+
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <nav class="navbar-inverse my_nav_bar">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <nav class="navbar-custom">
+                <a class="navbar-brand" href="#home">BUGNI</a>
+            </nav>
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT US</a></li>
+                <li><a href="#register">REGISTER</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <br>
+    <br>
+
+    <section id="home">
+        <div class="iframe-container">
+            <iframe class="responsive-item" height="500px" width="1000px" src="https://www.youtube.com/embed/bydekL6GOyg?&autoplay=1" 
+            title="BUGNI" frameborder="0" allow="autoplay" allowfullscreen></iframe>>
+            </iframe>
+        </div>
+        <!-- <h1 >I Am  -->
+        <br>
+        <!-- <span id="name" >Tim Berners-Lee</span>
+        </h1>
+        <h2 > I am the founder of www: World Wide Web</h2> -->
+    </section>
+
+
+    <section id="about">
+        <h1>About Bugni!</h1>
+        <div class="line"></div>
+        <p>
+
+            <!-- <blockquote>
+                <cite>
+                    <b>"A penny saved is a penny earned."</b>
+                </cite>
+                - Benjamin Franklin
+            </blockquote> -->
+
+            <figure class="quote">
+                <blockquote>
+                    <b>"A penny saved is a penny earned."</b>
+                </blockquote>
+                <figcaption>
+                  &mdash; <cite>Benjamin Franklin</cite>  </figcaption>
+              </figure>
+
+              Bugni is a financial education startup aimed at helping children develop good 
+              saving habits from a young age. The company provides an app and a paper savings 
+              account for kids, which allows them to learn about managing money through a fun and 
+              interactive experience. This will help them develop good financial habits that will 
+              benefit them in the future. Parents can set up allowance, chores, and reward systems 
+              for their children through the app, and kids can save and track their earnings. 
+              The platform is designed to be user-friendly and engaging, making it easy for kids to 
+              track and see the potential growth of their savings over time. Additionally, Bugni offers 
+              educational resources like articles and videos, and games to teach children about 
+              budgeting, saving, and investing. The goal of the company is to empower the next 
+              generation with the financial skills they need to succeed in the future.
+            
+            </p>
+    </section>
+
+    <hr>
+
+    <section id="register">
+        <h1>Register!</h1>
+        <div class="line"></div>
+        <br>
+        <p id="register_id">
+            THE COURSE WOULD BE OUT VERY SOON!
+        </p>
+        <p>
+            <br>
+
+        <div>
+            <h3>Would you like to enroll your child in the course?</h3>
+            <div class="yesno_container">
+                <button class="btn btn-success btn-lg" id="yesno_button_yes">YES :)</button>
+                <button class="btn btn-danger btn-lg" id="yesno_button_no">NO</button>
+            </div>
+        </div>
+        <hr>
+
+        <div class="no_click_div" id="no_click_div">
+            <h4>
+                We Respect Your Response. Thankyou For Taking Out Your Time!
+            </h4>
+        </div>
+
+        <div class="email_div_class" id="email_div_class">
+            <div>
+                <h4 for="email">
+                    THANKYOU SOO MUCH, COULD YOU PLEASE ENTER YOUR EMAIL-ID BELOW TO GET MAIL FROM US
+                    REGARDING THE COURSE.
+                </h4>
+            </div>
+            </p>
+            <div class="column">
+                <input type="email" name="email" id="email_input" placeholder="Please enter you Email-Id here!" pattern=".+@gmail.com" pattern=".+@yahoo.com" required>
+            </div>
+            <br>
+            <div class="column">
+                <button type="submit" class="btn btn-primary btn-lg" id="submit_button">Submit</button>
+            </div>
+        </div>
+
+    </section>
+
+    <hr>
+    <section id="contact">
+        <footer class="footer">
+            <div class="footerContainer">
+                <div class="footer-column">
+                    <img src="logo_cropped-removebg.png" id="logo_bugni" alt="BUGNI">
+                </div>
+                <div>
+                    <p>Mail To us at: <a href="mailto:kakkarayush27@gmail.com">kakkarayush27@gmail.com</a></p>
+                    <b>
+                        <p class="copyright">2023, BUGNI.ONLINE</p>
+                    </b>
+                    <p id="footer_love_id">Made with &#10084 By AYUSH KAKKAR</p>
+                </div>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+
+</body>
+
+</html>
